@@ -11,10 +11,10 @@ import nota.player.SongPlayer;
 
 /**
  * Handles players other than the radio one, given the others are quite bad in their api
- * (with this they still are, but at least are more usable).
+ * (with this they still are, but at least are more usable).<p>
  * 
- * Now it also handles radios, given otherwise they'll never be freed, and servers won't be able
- * to stop
+ * <s>Now it also handles radios, given otherwise they'll never be freed, and servers won't be able
+ * to stop.</s> No, they still won't be able to stop given this thing also leaks threads!
  */
 public class PlayerHandler {
     private static final Set<SongPlayer> handledPlayers = Collections.newSetFromMap(new WeakHashMap<>());

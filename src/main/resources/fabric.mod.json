@@ -1,0 +1,29 @@
+{
+	"schemaVersion": 1,
+	"id": "scarpet-nbs",
+	"version": "${version}",
+	"name": "Scarpet NBS",
+	"description": "Adds support for handling NBS music to Scarpet!",
+	"authors": [
+		"altrisi"
+	],
+	"contact": {
+		"homepage": "https://github.com/altrisi/scarpet-nbs",
+		"sources": "https://github.com/altrisi/scarpet-nbs"
+	},
+	"license": "LGPL-3.0-only",
+	"icon": "assets/scarpet-nbs/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"altrisi.mods.scnbs.ScarpetNBS"
+		]
+	},
+	"mixins": [
+		"scarpet-nbs.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.22",
+		"minecraft": "~1.20.1"
+	}
+}

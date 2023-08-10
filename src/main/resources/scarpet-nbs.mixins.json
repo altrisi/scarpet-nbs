@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "package": "altrisi.mods.scnbs.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "FileArgumentAccess"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

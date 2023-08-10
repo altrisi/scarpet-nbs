@@ -43,6 +43,7 @@ public class ScarpetNBS implements ModInitializer, CarpetExtension {
 	}
 
 	private static Playlist playlistOf(List<Song> songs) {
+		if (songs == null) return null; // conversion of a song failed earlier
 		if (songs.size() == 0) throw new InternalExpressionException("Must play at least a song");
 		return new Playlist(songs.toArray(Song[]::new));
 	}

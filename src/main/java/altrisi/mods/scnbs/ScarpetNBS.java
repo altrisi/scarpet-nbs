@@ -26,7 +26,7 @@ public class ScarpetNBS implements ModInitializer, CarpetExtension {
 
     @Override
 	public void onInitialize() {
-		CarpetServer.manageExtension(new ScarpetNBS());
+		CarpetServer.manageExtension(this);
 
 		SimpleTypeConverter.registerType(SongValue.class, Song.class, SongValue::getSong, "song");
 		SimpleTypeConverter.registerType(SongPlayerValue.class, SongPlayer.class, SongPlayerValue::getPlayer, "song");
